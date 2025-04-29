@@ -23,22 +23,22 @@ def insertar_desde_csv(tabla):
         if tabla == 'Alumno':
             for _, row in df.iterrows():
                 cursor.execute("""
-                    INSERT INTO Alumno (numControl, apellidoPaterno, apellidoMaterno, nombre, discapacidad, carrera, ingreso, periodo, direccion, fechaNacimiento, cvePE)
-                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                    INSERT INTO Alumno (numControl, apellidoPaterno, apellidoMaterno, nombre, discapacidad, carrera, ingreso, periodo)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
                 """, tuple(row))
 
         elif tabla == 'Personal':
             for _, row in df.iterrows():
                 cursor.execute("""
-                    INSERT INTO Personal (cvePersonal, apellidoPaterno, apellidoMaterno, nombre, RFC, fechaIngreso, fechaCumpleaños, direccion, puesto)
-                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+                    INSERT INTO Personal (cvePersonal, apellidoPaterno, apellidoMaterno, nombre)
+                    VALUES (%s, %s, %s, %s, )
                 """, tuple(row))
 
         elif tabla == 'Especialidad':
             for _, row in df.iterrows():
                 cursor.execute("""
-                    INSERT INTO Especialidad (cveEspecialidad, nombreEspecialidad, cvePE)
-                    VALUES (%s, %s, %s)
+                    INSERT INTO Especialidad (cveEspecialidad, nombreEspecialidad)
+                    VALUES (%s, %s)
                 """, tuple(row))
 
         elif tabla == 'Materia':
