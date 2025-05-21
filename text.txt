@@ -1,0 +1,62 @@
+Características Clave
+Todo en un solo archivo: Fácil de transportar y probar
+
+Configuración simple: Solo editar las variables al inicio
+
+Autenticación por roles:
+
+Administrador: Acceso completo
+
+Profesor: Gestiona calificaciones
+
+Asistente: Registra alumnos
+
+Consulta: Solo lectura
+
+Funcionalidades básicas:
+
+Creación de usuarios (solo admin)
+
+Registro de alumnos
+
+Gestión de calificaciones
+
+Consultas básicas
+
+Seguridad básica:
+
+Uso de getpass para contraseñas
+
+Control de acceso con decoradores
+
+Manejo adecuado de conexiones
+
+Cómo Usarlo
+Guarda el código como gestor_escuela.py
+
+Asegúrate de tener:
+
+MySQL instalado
+
+La base de datos escuela creada
+
+Los usuarios definidos en tu MySQL
+
+Instala el conector: pip install mysql-connector-python
+
+Ejecuta: python gestor_escuela.py
+
+Notas Didácticas
+Para simplificar, algunas funciones están "simuladas"
+
+Puedes expandir cada menú con más funcionalidades reales
+
+Ideal para enseñar:
+
+Conexión a bases de datos
+
+Autenticación/autorización
+
+Programación orientada a objetos
+
+Buenas prácticas en Python

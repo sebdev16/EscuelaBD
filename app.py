@@ -6,7 +6,7 @@ from tkinter import Tk, filedialog, simpledialog
 conexion = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="mysqlsebas",
+    password="123456789",
     database="escuela"
 )
 cursor = conexion.cursor()
