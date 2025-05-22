@@ -60,3 +60,8 @@ Autenticación/autorización
 Programación orientada a objetos
 
 Buenas prácticas en Python
+
+
+
+
+pip install mysql-connector-python pandas
